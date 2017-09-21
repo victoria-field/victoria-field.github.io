@@ -179,6 +179,13 @@ hr.small {
 
 .about {
   padding: 50px 0;
+  background: url(../img/zen5.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: rgb(20, 103, 249);
+
 }
 
 
@@ -212,6 +219,12 @@ hr.small {
 
 .portfolio {
   padding: 50px 0;
+  background: url(../img/zen6.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 .portfolio-item {
@@ -225,7 +238,6 @@ hr.small {
 .img-portfolio:hover {
   opacity: .8;
 }
-
 
 /* Call to Action */
 
