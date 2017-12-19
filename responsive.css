@@ -1,0 +1,80 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+
+    .top-nav {
+      flex-direction: column;
+    }
+    .logo{
+      margin: auto;
+    }
+    .menu{
+      margin: 20px auto 0;
+      width: 80%;
+    }
+    .hero{
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .hero-image{
+      padding-left: 0;
+      margin-top: 40px;
+    }
+
+    .deatured-section{
+      padding: 50px 0;
+
+    }
+
+    .products{
+      grid-template-columns: 1fr;
+    }
+
+    .blog-posts{
+      grid-template-columns: 1fr;
+      text-align: center;
+      grid-template-areas:
+       "blog3"
+       "blog2"
+       "blog1";
+    }
+
+    .footer-content{
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .follow-me{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
+
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}

@@ -1,91 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
   <title>Victoria Field</title>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Spectral+SC" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- external css stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://use.fontawesome.com/20b4e6854e.js"></script>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
-      <i class="fa fa-bars"></i>
-    </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-          <i class="fa fa-times"></i>
-        </a>
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#top">Victoria Field</a>
-      </li>
-      <li>
-        <a class="js-scroll-trigger" href="#top">Home</a>
-      </li>
-      <li>
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li>
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li>
-        <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <div class="top-nav container">
+      <div class="logo"></div>
 
-  <!-- Header -->
-  <header class="header" id="top">
-    <div class="text-vertical-center">
-      <h1>Victoria Field</h1>
-      <h2>Full Stack Web Developer</h2>
-      <br>
-      <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Find Out More</a>
+      <!--ul>li>a*4  -->
+      <ul class="menu">
+        <li><a class="nav-control" href="#top">Home</a></li>
+        <li><a class="nav-control" href="#about">About</a></li>
+        <li><a class="nav-control" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-control" href="#contact">Contact</a></li>
+        <!-- this is to see what happens to the green dot -->
+      </ul>
+
+    </div>
+    <!-- End of top nav -->
+
+    <div class="hero container" id="top">
+      <div class="hero-copy">
+        <h1 class="name">Victoria Field</h1>
+        <p class="tag-line">Full-Stack Web Developer</p>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#about" class="button button-white">Find Out More</a>
+
+      </div>
+      <!--End of hero-copy  -->
+      <!-- end hero -->
     </div>
   </header>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <div class="container text-center">
-      <h2>My name is Victoria Field. I am a fullstack developer currently enrolled in the University of Texas Coding Bootcamp.</h2>
-      <p class="lead">I have a Bachelor of Science from East Carolina University in History. I have discovered my passion for web development both on the front and back ends. I learned the MERN stack in the University of Texas Coding Bootcamp and graduated October 28th, 2017 as a Full Stack Developer. Take a look below at some examples of my work or check me out on github. </p>
+  <div class="featured-section">
+    <div class="container about" id="about">
+      <h1 class="text-center"> My name is Victoria Field. <br />I am a Full-Stack Developer. </h1>
+      <p class="section-description">I am a graduate from the University of Texas at Austin full-time Coding Bootcamp. I have a Bachelor of Science from East Carolina University in History. I have discovered my passion for web development both on the front and back end. My specialty
+        is the MERN stack. Take a look below at some examples of my work or check me out on github. </p>
+
+      <!-- <div class="text-center button-container">
+        <a href="#" class="button">Featured</a>
+        <a href="#" class="button">On Sale</a>
+      </div> -->
+      <!-- end container for about -->
     </div>
-    <!-- /.container -->
-  </section>
-
-
+    <!-- end featured section -->
   </div>
-
-  </div>
-
-  </div>
-
-  </section>
-
-
 
   <!-- Portfolio -->
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
-          <h2>My Work Examples</h2>
+          <h2 class="portfolio-title">My Work Examples</h2>
           <hr class="small">
           <div class="row">
             <div class="col-md-6">
@@ -94,8 +73,8 @@
                 <div class="card-body">
                   <h4 class="card-title">Harry Potter Trivia</h4>
                   <p class="card-text">This is a short trivia game that was built with HTML CSS Bootstrap and Javascript .</p>
-                  <a href="https://victoria-field.github.io/Trivia/" class="btn btn-primary">Click to play</a>
-                  <a href="https://github.com/victoria-field/TriviaGame" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://victoria-field.github.io/Trivia/" class="btn button-white">Click to play</a>
+                  <a href="https://github.com/victoria-field/TriviaGame" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
@@ -106,8 +85,8 @@
                 <div class="card-body">
                   <h4 class="card-title">Old McDonald's Farm Hangman</h4>
                   <p class="card-text">This was built with HTML CSS Bootstrap and Javascript .</p>
-                  <a href="https://victoria-field.github.io/Hangman/" class="btn btn-primary">Click to play</a>
-                  <a href="https://github.com/victoria-field/Hangman" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://victoria-field.github.io/Hangman/" class="btn button-white">Click to play</a>
+                  <a href="https://github.com/victoria-field/Hangman" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
@@ -121,7 +100,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Personal Assistant</h4>
                   <p class="card-text">This is a node bot that can respond to twitter, spotify and movie requests.</p>
-                  <a href="https://github.com/victoria-field/liri-node-app" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://github.com/victoria-field/liri-node-app" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
@@ -131,7 +110,7 @@
                 <div class="card-body">
                   <h4 class="card-title">The Banana Store</h4>
                   <p class="card-text">This is a server side app that was built with Node.js and MySQL.</p>
-                  <a href="https://github.com/victoria-field/bamazon" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://github.com/victoria-field/bamazon" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
@@ -143,8 +122,8 @@
                 <div class="card-body">
                   <h4 class="card-title">Train Scheduler</h4>
                   <p class="card-text">This was built with HTML CSS Bootstrap Moment.js and Firebase .</p>
-                  <a href="https://victoria-field.github.io/Train-Scheduler/" class="btn btn-primary">Click to play</a>
-                  <a href="https://github.com/victoria-field/Train-Scheduler" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://victoria-field.github.io/Train-Scheduler/" class="btn button-white">Click to play</a>
+                  <a href="https://github.com/victoria-field/Train-Scheduler" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
@@ -152,10 +131,10 @@
               <div class="card" style="width: 20rem;">
                 <img class="card-img-top" src="img/wheretogo.jpg" alt="Where to Go">
                 <div class="card-body">
-                  <h4 class="card-title">Where To Go San Fransico</h4>
+                  <h4 class="card-title">Where To Go</h4>
                   <p class="card-text">This was a group project that features RESTful APIs, and much more .</p>
-                  <a href="https://victoria-field.github.io/Where-to-go/" class="btn btn-primary">Click to use</a>
-                  <a href="https://github.com/victoria-field/Where-to-go" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://victoria-field.github.io/Where-to-go/" class="btn button-white">Click to use</a>
+                  <a href="https://github.com/victoria-field/Where-to-go" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
@@ -167,8 +146,8 @@
                 <div class="card-body">
                   <h4 class="card-title">Feedback Co</h4>
                   <p class="card-text">This is a full stack project. That uses React and Node.js</p>
-                  <a href="https://tranquil-island-96902.herokuapp.com/" class="btn btn-primary">Click to use</a>
-                  <a href="https://github.com/victoria-field/Feedback-app" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://tranquil-island-96902.herokuapp.com/" class="btn button-white">Click to use</a>
+                  <a href="https://github.com/victoria-field/Feedback-app" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
@@ -178,77 +157,47 @@
                 <div class="card-body">
                   <h4 class="card-title">Zombie-RPG</h4>
                   <p class="card-text">This is a backend app that uses Node.js and inquirer</p>
-                  <a href="https://github.com/victoria-field/Zombie-RPG" class="btn btn-primary">Click to see the code</a>
+                  <a href="https://github.com/victoria-field/RPG-Python-Cheese-battle" class="btn button-white">Click for the python version</a>
+                  <a href="https://github.com/victoria-field/Zombie-RPG" class="btn button-white">Click to see the code</a>
                 </div>
               </div>
             </div>
           </div>
 
-              <!-- /.row (nested) -->
-              <a href="https://github.com/victoria-field" class="btn btn-dark">View More Items</a>
-            </div>
-            <!-- /.col-lg-10 -->
-          </div>
-          <!-- /.row -->
+
+          <!-- /.col-lg-10 -->
         </div>
-        <!-- /.container -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
   </section>
 
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <a name="contact"></a>
-      <div class="row">
-        <div class="col-lg-10 mx-auto text-center">
-          <h4>
-              <strong>For more information reach out</strong>
-            </h4>
-          <p>I would love to chat with you!
-          </p>
-          <ul class="list-unstyled">
-            <li>
-              <i class="fa fa-phone fa-fw"></i> (252) 347-8867</li>
-            <li>
-              <i class="fa fa-envelope-o fa-fw"></i>
-              <a href="mailto:victoria.shadid@gmail.com">victoria.shadid@gmail.com</a>
-            </li>
-          </ul>
-          <br>
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/victoria-field/">
-                  <i class="fa fa-linkedin-square fa-fw fa-3x" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/victoria-field">
-                  <i class="fa fa-github fa-fw fa-3x" aria-hidden="true"></i>
-                </a>
-            </li>
 
-          </ul>
-          <hr class="small">
-          <p class="text-muted">Copyright &copy; Victoria Field 2017</p>
-        </div>
-      </div>
+  <div class="text-center button-container">
+    <a href="https://github.com/victoria-field" class="button">View more</a>
+  </div>
+  </div>
+  <!-- end container for product -->
+
+
+
+  <footer>
+    <div class="footer-content container" id="contact">
+      <div class="made-with">Made with <i class="fa fa-heart"></i> by Victoria Field</div>
+      <ul class="follow-me">
+        <li>Contact me:</li>
+
+        <li><a href="mailto:victoria.shadid@gmail.com"><i class="fa fa-globe fa-3x contact"></i></a></li>
+        <li><a href="https://github.com/victoria-field"><i class="fa fa-github fa-3x contact"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/victoria-field/"><i class="fa fa-linkedin fa-3x contact"></i></a></li>
+
+
+      </ul>
     </div>
-    <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
-        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
-      </a>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.js"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>
